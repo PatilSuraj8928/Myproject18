@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDB4 Connection</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+</head>
+<body>
+    <center>
+        <h1>MDB4 Connection</h1>
+        <!-- Card -->
+        <div class="card">
+
+            <!-- Card image -->
+            <div class="view overlay">
+            <img class="card-img-top" src="{% static 'images/iron-man.png' %}"
+                alt="Card image cap">
+            <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+        
+            <!-- Card content -->
+            <div class="card-body">
+        
+            <!-- Title -->
+            <h4 class="card-title">Iron-man</h4>
+            <!-- Text -->
+            <p class="card-text">The legend, the Avenger, the protector of the world , The Iron-man, Man with huge legacy</p>
+            <!-- Button -->
+            <a href="https://en.wikipedia.org/wiki/Iron_Man_(2008_film)" class="btn btn-primary">click here to know more</a>
+        
+            </div>
+        
+        </div>
+        <!-- Card -->
+        <!-- Card Narrower -->
+        <div class="card card-cascade narrower">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+            <img class="card-img-top" src="{% static 'images/goku.png' %}"
+                alt="Card image cap">
+            <a>
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+        
+            <!-- Card content -->
+            <div class="card-body card-body-cascade">
+        
+            <!-- Label -->
+            <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> goku</h5>
+            <!-- Title -->
+            <h4 class="font-weight-bold card-title">Goku</h4>
+            <!-- Text -->
+            <p class="card-text">One of the legend from Manga series the beast Goku</p>
+            <!-- Button -->
+            <a class="btn btn-unique">More about me</a>
+        
+            </div>
+        
+            <!-- Card footer -->
+            <div class="card-footer text-muted text-center">
+            4 days ago
+            </div>
+        
+        </div>
+        <!-- Card Narrower -->
+        <a href="{% url 'something2:second' %}">Click here to go to the next Page2</a>
+
+    </center>
+    
+
+
+
+
+
+
+
+
+    <script src="{% static 'js/bootstarp.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+</body>
+</html>
